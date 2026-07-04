@@ -25,9 +25,11 @@ print()
 #Program 3: Grade Calculator.
 marks = int(input("Enter your marks: "))
 
-if marks>=90:
+if marks < 0 or marks > 100:
+    print('Invalid Marks!')
+elif marks >= 90:
     print("Grade A")
-elif marks>=80:
+elif marks >= 80:
     print('Grade B')
 elif marks >= 70:
     print("Grade C")
@@ -36,10 +38,16 @@ elif marks >= 60:
 else:
     print("Fail")
 
+print()
+
 #Program 4: Leap Year Calculator.
 year = int(input("Enter year: "))
 
-if year % 4 == 0:
-    print('Leap Year')
+if year % 400 == 0:
+    print("Leap Year")
+elif year % 100 == 0:
+    print("Not a Leap Year")
+elif year % 4 == 0:
+    print("Leap Year")
 else:
-    print('Not a Leap Year')
+    print("Not a Leap Year")
