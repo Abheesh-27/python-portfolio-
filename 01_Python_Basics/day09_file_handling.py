@@ -32,8 +32,6 @@ with open('Students.txt','r') as file:
     lines = file.readlines()
 print('Total Students = ',len(lines))
 
-file.close()
-
 
 print("\n===== Program 5: Search a Student =====")
 
@@ -51,10 +49,10 @@ with open('Students.txt','r') as file:
 print("\n===== Program 6: Add a Student =====")
 
 name = input('Enter name of the student: ')
-print('Student Added Successfully.')
 with open('Students.txt','a') as file:
     file.write('\n' + name)
 
+print('Student Added Successfully.')
 
 
 print("\n===== Program 7: Read Line by Line =====")
