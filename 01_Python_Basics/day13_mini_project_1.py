@@ -110,10 +110,16 @@ def update_student():
                 roll_number = input('Enter Roll Number: ').upper()
                 for student in students:
                     if student.roll == roll_number:
-                        new_name = input('Enter new name: ').strip().title()
-                        student.name = new_name
-                        print('\nName Updated!')
-                        return
+                        while True:
+
+                            new_name = input('Enter new name: ').strip().title()
+                            if new_name.replace(' ','').isalpha():
+
+                                student.name = new_name
+                                print('\nName Updated!')
+                                return
+                            
+                            print('Enter a Valid Name!')
                    
                 print('\nRoll Number Not Found!')
 
@@ -146,10 +152,15 @@ def update_student():
                 roll_number = input('Enter Roll Number: ').upper()
                 for student in students:
                     if student.roll == roll_number:
-                        new_department = input('Enter new department: ').title()
-                        student.department = new_department
-                        print('\nDepartment Updated Successfully!')
-                        return
+                        while True:
+                            new_department = input('Enter new department: ').strip().title()
+
+                            if new_department.replace(' ','').isalpha():
+                                student.department = new_department
+                                print('\nDepartment Updated Successfully!')
+                                return
+                            
+                            print('Enter a Valid Department!')
 
                 print('\nRoll Number Not Found!')
         
