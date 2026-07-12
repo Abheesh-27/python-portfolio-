@@ -1,0 +1,204 @@
+# Python Basics.
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A structured collection of Python programs covering the fundamental concepts of the language, built through daily practice and mini projects.
+
+This module forms the foundation of my software engineering and machine learning learning roadmap. Every program in this directory was written to strengthen problem-solving skills, code organization, and programming fundamentals before moving on to scientific computing and data analysis.
+
+---
+
+## Table of Contents.
+
+- [Module Objectives](#module-objectives)
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Learning Roadmap](#learning-roadmap)
+- [Mini Projects](#mini-projects)
+- [Learning Outcomes](#learning-outcomes)
+- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+- [Next Module](#next-module)
+- [Author](#author)
+
+---
+
+## Module Objectives.
+
+- Build a strong foundation in Python programming.
+- Develop problem-solving skills through daily coding exercises.
+- Learn clean code practices and modular program design.
+- Prepare for advanced topics including NumPy, Pandas, SQL, and Machine Learning.
+
+---
+
+## Overview.
+
+This module introduces the core building blocks of Python programming through progressively structured exercises.
+
+The topics covered include:
+
+- Variables and Data Types
+- Operators
+- Conditional Statements
+- Loops
+- Functions
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+- Strings
+- File Handling
+- Exception Handling
+- Python Modules
+- Object-Oriented Programming (OOP)
+
+Each topic includes practical examples focused on writing clean, readable, and well-structured code.
+
+---
+
+## Repository Structure.
+
+```text
+01_Python_Basics/
+│
+├── day01_variables.py
+├── day02_operators.py
+├── day03_conditions.py
+├── day04_loops.py
+├── day05_functions.py
+├── day06_lists.py
+├── day07_tuples_sets_dictionary.py
+├── day08_strings.py
+├── day09_file_handling.py
+├── day10_exception_handling.py
+├── day11_modules.py
+├── day12_oop.py
+├── day13_student_management_system.py
+├── day14_bank_management_system.py
+├── Students.txt
+└── README.md
+```
+
+---
+
+## Learning Roadmap.
+
+| Day | Topic |
+|:--:|-------------------------------|
+| 01 | [Variables & Data Types](day01_variables.py) |
+| 02 | [Operators](day02_operators.py) |
+| 03 | [Conditional Statements](day03_conditions.py) |
+| 04 | [Loops](day04_loops.py) |
+| 05 | [Functions](day05_functions.py) |
+| 06 | [Lists](day06_lists.py) |
+| 07 | [Tuples, Sets & Dictionaries](day07_tuples_sets_dictionary.py) |
+| 08 | [Strings](day08_strings.py) |
+| 09 | [File Handling](day09_file_handling.py) |
+| 10 | [Exception Handling](day10_exception_handling.py) |
+| 11 | [Python Modules](day11_modules.py) |
+| 12 | [Object-Oriented Programming](day12_oop.py) |
+| 13 | [Student Management System](day13_student_management_system.py) |
+| 14 | [Bank Management System](day14_bank_management_system.py) |
+---
+
+## Mini Projects
+
+### Student Management System.
+
+A command-line application for managing student records.
+
+**Key Features**
+
+- Add student records
+- Search student records
+- Update existing records
+- Delete records
+- Display all records
+- Store data using file handling
+
+**Source Code**
+
+- [day13_student_management_system.py](day13_student_management_system.py)
+
+---
+
+### Bank Management System.
+
+A console-based banking application designed using object-oriented programming principles.
+
+**Key Features**
+
+- Create accounts
+- Deposit funds
+- Withdraw funds
+- Display account information
+- Check account balance
+- Exception handling
+- Class-based implementation
+
+**Source Code**
+
+- [day14_bank_management_system.py](day14_bank_management_system.py)
+
+---
+
+## Learning Outcomes.
+
+Key skills developed through this module:
+
+- Write clean and readable Python programs.
+- Solve programming problems using functions and control flow.
+- Work with Python collections and string manipulation.
+- Read and write files.
+- Handle runtime exceptions effectively.
+- Organize code using modules.
+- Design applications using object-oriented programming.
+- Develop console-based applications from scratch.
+
+---
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Abheesh-27/python-portfolio-.git
+```
+
+Move into this module:
+
+```bash
+cd python-portfolio/01_Python_Basics
+```
+
+Run any program:
+
+```bash
+python day04_loops.py
+```
+
+---
+
+## Technologies Used
+
+- Python 3
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## Next Module
+
+Continue to **[02_NumPy](../02_NumPy/README.md)**.
+
+---
+
+## Author
+**Abheesh Kousthubha Manda**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Abheesh--27-black?logo=github)](https://github.com/Abheesh-27)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abheesh-blue?logo=linkedin)](https://www.linkedin.com/in/manda-abheesh-a68261297/)
