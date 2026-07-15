@@ -7,7 +7,7 @@ class NegativeNumber(Exception):
 
 print('\n ===== Program 1: Else =====')
 try:
-    num = int(input('Enter a number:'))
+    num = int(input('Enter a number: '))
     print(10 / num)
 except ValueError:
     print('Please enter numbers only!')
@@ -118,3 +118,4 @@ try:
 
 except ValueError as e:
      print('Error: ', e)
+print()
