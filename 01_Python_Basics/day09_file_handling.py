@@ -35,7 +35,7 @@ print('Total Students = ',len(lines))
 
 print("\n===== Program 5: Search a Student =====")
 
-name = input('Enter student name: ')
+name = input('Enter student name: ').title()
 
 with open('Students.txt','r') as file:
     students = file.read().splitlines()
