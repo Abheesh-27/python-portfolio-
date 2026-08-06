@@ -5,7 +5,7 @@ class NegativeNumber(Exception):
     pass
 
 
-print('\n ===== Program 1: Else =====')
+print('\n===== Program 1: Else =====')
 try:
     num = int(input('Enter a number: '))
     print(10 / num)
@@ -20,7 +20,7 @@ print()
 
 
 #same code using finally
-print('\n ===== Program 2: Finally =====')
+print('\n===== Program 2: Finally =====')
 try:
     num1 = int(input('Enter a number: '))
     print(10 / num1)
@@ -32,7 +32,7 @@ print()
 
 
 #exception as 'e'
-print('\n ===== Program 3: Exception as e =====')
+print('\n===== Program 3: Exception as e =====')
 try:
     number = int(input('Enter a number: '))
     print(100 / number)
@@ -42,7 +42,7 @@ print()
 
 
 #creating your own error
-print('\n ===== Program 4: Creating your own error =====')
+print('\n===== Program 4: Creating your own error =====')
 age = int(input('Enter your age: '))
 
 if age < 18:
@@ -53,7 +53,7 @@ print()
 
 
 #customising exception
-print('\n ===== Program 5: Customised Error =====')
+print('\n===== Program 5: Customised Error =====')
 number_1 = int(input('Enter a number: '))
 if number_1 < 0:
     raise NegativeNumber('Negative numbers are not allowed!') 
@@ -64,7 +64,7 @@ print()
 
 
 #calculator exception handling
-print('\n ===== Program 6: Calculator Exception Handling =====')
+print('\n===== Program 6: Calculator Exception Handling =====')
 try: 
     first_number = int(input('Enter first number: '))
     second_number = int(input('Enter second number: '))
@@ -93,7 +93,7 @@ except WrongOperation as e:
 
 
 #ATM Withdrawal
-print('\n ===== Program 7: ATM Withdrawal =====')
+print('\n===== Program 7: ATM Withdrawal =====')
 try: 
     balance = float(input('Enter Balance: '))
     amount = float(input('Enter Amount: '))
