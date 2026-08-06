@@ -110,7 +110,8 @@ print(f"Square Root    : {python_sqr_time/ numpy_sqr_time:.2f}x faster with NumP
 print(f"Sum            : {python_sum_time / numpy_sum_time:.2f}x faster with NumPy")
 print(f"Mean           : {python_mean_time / numpy_mean_time:.2f}x faster with NumPy")
 
-print('\n==== Conclusion ====')
-print("NumPy performs numerical operations much faster than Python lists.")
-print("It uses vectorized operations instead of processing one element at a time.")
-print("NumPy is the preferred choice for numerical computing and data analysis.\n")
+print("\n==== Conclusion ====")
+print("NumPy significantly outperforms Python lists for numerical operations.")
+print("Its vectorized implementation allows computations to run much faster.")
+print("NumPy also uses memory more efficiently by storing data in contiguous memory.")
+print("This is why NumPy is widely used in data science, machine learning, and scientific computing.\n")
