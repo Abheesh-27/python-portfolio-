@@ -63,6 +63,7 @@ while True:
        print('Enter numbers only!')
 
 movie1 = Movie(movie1_name, movie1_hero, movie1_rating)
+print()
 
 movie2_name = input('Enter another movie name: ')
 movie2_hero = input('Hero: ')
