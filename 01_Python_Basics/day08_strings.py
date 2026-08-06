@@ -66,7 +66,7 @@ print('After converting into string: ',after_joining)
 print()
 
 
-print('\n ===== Program 8: Email Validator =====')
+print('\n ===== Program 8: Basic Email Format Check =====')
 email = input('Enter email: ')
 print()
 
