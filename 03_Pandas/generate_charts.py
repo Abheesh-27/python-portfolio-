@@ -2,17 +2,15 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# -----------------------------
+
 # LOAD DATA
-# -----------------------------
 df = pd.read_csv(
     "03_Pandas/Sample_Superstore.csv",
     encoding="latin1"
 )
 
-# -----------------------------
+
 # DATA CLEANING
-# -----------------------------
 df = df.drop_duplicates()
 
 if df["Postal Code"].isnull().sum() > 0:
@@ -30,14 +28,12 @@ df["Discount_Level"] = df["Discount"].apply(
     lambda x: "Low Discount" if x <= 0.2 else "High Discount"
 )
 
-# -----------------------------
+
 # CREATE IMAGES FOLDER
-# -----------------------------
 os.makedirs("03_Pandas/images", exist_ok=True)
 
-# -----------------------------
+
 # 1. SALES BY CATEGORY
-# -----------------------------
 category_sales = (
     df.groupby("Category")["Sales"]
     .sum()
@@ -53,9 +49,8 @@ plt.tight_layout()
 plt.savefig("03_Pandas/images/sales_by_category.png")
 plt.close()
 
-# -----------------------------
+
 # 2. PROFIT BY CATEGORY
-# -----------------------------
 category_profit = (
     df.groupby("Category")["Profit"]
     .sum()
@@ -71,9 +66,8 @@ plt.tight_layout()
 plt.savefig("03_Pandas/images/profit_by_category.png")
 plt.close()
 
-# -----------------------------
+
 # 3. YEARLY SALES TREND
-# -----------------------------
 yearly_sales = (
     df.groupby("Order Year")["Sales"]
     .sum()
@@ -89,9 +83,8 @@ plt.tight_layout()
 plt.savefig("03_Pandas/images/yearly_sales_trend.png")
 plt.close()
 
-# -----------------------------
+
 # 4. MONTHLY SALES TREND
-# -----------------------------
 monthly_sales = (
     df.groupby("Order Month_Year")["Sales"]
     .sum()
@@ -107,9 +100,8 @@ plt.tight_layout()
 plt.savefig("03_Pandas/images/monthly_sales_trend.png")
 plt.close()
 
-# -----------------------------
+
 # 5. DISCOUNT VS PROFIT
-# -----------------------------
 discount_profit = (
     df.groupby("Discount")["Profit"]
     .mean()
@@ -125,9 +117,8 @@ plt.tight_layout()
 plt.savefig("03_Pandas/images/discount_vs_profit.png")
 plt.close()
 
-# -----------------------------
+
 # 6. CATEGORY VS REGION HEATMAP
-# -----------------------------
 pivot = pd.pivot_table(
     df,
     values="Profit",
@@ -162,8 +153,8 @@ plt.close()
 print("\nCharts successfully generated!")
 
 print("""
-Generated Files
----------------
+Generated Files:
+      
 sales_by_category.png
 profit_by_category.png
 yearly_sales_trend.png
