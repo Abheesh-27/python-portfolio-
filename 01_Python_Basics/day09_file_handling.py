@@ -1,4 +1,4 @@
-print('\n ===== Program 1: Create File =====')
+print('\n===== Program 1: Create File =====')
  
 with open('Students.txt','w') as file:
     file.write('Abheesh\n')
@@ -8,13 +8,13 @@ with open('Students.txt','w') as file:
 print('File Created Successfully!')
 
 
-print('\n ===== Program 2: Read File =====')
+print('\n===== Program 2: Read File =====')
 with open('Students.txt','r') as file:
     content = file.read()
     print('Content in the file is:\n',content)
 
 
-print('\n ===== Program 3: Append File =====')
+print('\n===== Program 3: Append File =====')
 
 with open('Students.txt','a') as file:
     file.write('\nRohan')
@@ -25,7 +25,7 @@ with open("Students.txt","r") as file:
     print(file.read())
 
 
-print('\n ===== Program 4: Count Lines =====')
+print('\n===== Program 4: Count Lines =====')
 
 with open('Students.txt','r') as file:
 #readlines() stored the file as a list.
@@ -48,7 +48,7 @@ with open('Students.txt','r') as file:
 
 print("\n===== Program 6: Add a Student =====")
 
-name = input('Enter name of the student: ')
+name = input('Enter name of the student: ').title()
 with open('Students.txt','a') as file:
     file.write('\n' + name)
 
@@ -62,6 +62,3 @@ with open('Students.txt','r') as file:
         print(line.strip())
 #strip() removes extra whitespace and doesnt give blank lines between outputs.
 print()
-
-
-
