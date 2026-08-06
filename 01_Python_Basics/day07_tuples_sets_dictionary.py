@@ -64,7 +64,7 @@ set1.remove(32)
 print("After removing 32:", set1)
 print()
 
-# pop() removes random element since sets are unordered.
+# pop() removes and returns an arbitrary element.
 set1.pop()
 print("After pop():", set1)
 print()
