@@ -46,7 +46,7 @@ plt.title("Sales by Category")
 plt.xlabel("Category")
 plt.ylabel("Sales")
 plt.tight_layout()
-plt.savefig("03_Pandas/images/sales_by_category.png")
+plt.savefig("03_Pandas/images/01_sales_by_category.png")
 plt.close()
 
 
@@ -63,7 +63,7 @@ plt.title("Profit by Category")
 plt.xlabel("Category")
 plt.ylabel("Profit")
 plt.tight_layout()
-plt.savefig("03_Pandas/images/profit_by_category.png")
+plt.savefig("03_Pandas/images/02_profit_by_category.png")
 plt.close()
 
 
@@ -80,7 +80,7 @@ plt.xlabel("Year")
 plt.ylabel("Sales")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("03_Pandas/images/yearly_sales_trend.png")
+plt.savefig("03_Pandas/images/03_yearly_sales_trend.png")
 plt.close()
 
 
@@ -97,7 +97,7 @@ plt.xlabel("Month")
 plt.ylabel("Sales")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("03_Pandas/images/monthly_sales_trend.png")
+plt.savefig("03_Pandas/images/04_monthly_sales_trend.png")
 plt.close()
 
 
@@ -114,7 +114,7 @@ plt.xlabel("Discount")
 plt.ylabel("Average Profit")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("03_Pandas/images/discount_vs_profit.png")
+plt.savefig("03_Pandas/images/05_discount_vs_profit_analysis.png")
 plt.close()
 
 
@@ -146,7 +146,7 @@ plt.title("Profit by Category and Region")
 
 plt.tight_layout()
 
-plt.savefig("03_Pandas/images/category_region_heatmap.png")
+plt.savefig("03_Pandas/images/06_category_region_profit_heatmap.png")
 
 plt.close()
 
@@ -155,10 +155,10 @@ print("\nCharts successfully generated!")
 print("""
 Generated Files:
       
-sales_by_category.png
-profit_by_category.png
-yearly_sales_trend.png
-monthly_sales_trend.png
-discount_vs_profit.png
-category_region_heatmap.png
+01_sales_by_category.png
+02_profit_by_category.png
+03_yearly_sales_trend.png
+04_monthly_sales_trend.png
+05_discount_vs_profit_analysis.png
+06_category_region_profit_heatmap.png
 """)
