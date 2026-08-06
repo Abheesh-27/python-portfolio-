@@ -40,7 +40,7 @@ print(dframe_array)
 # df = pd.read_csv('students.csv')
 # df = pd.read_excel('students.xlsx')
 
-# df.to_csv('Output.csv', index = False)         [index = False , doesn't give index as an extra column]
+# df.to_csv('Output.csv', index = False)      [index=False prevents Pandas from writing the row index as a separate column.]
 # df.to_excel('Output.xlsx', index = False)
 
 # exploring datasets
@@ -67,7 +67,7 @@ data = {
 }
 
 data_frame = pd.DataFrame(data)
-print('\nOverall info of the dataframe: ')
+print('\nOverall info of the dataframe:')
 data_frame.info()
 
 print('\nStudent with highest CGPA:')
@@ -80,15 +80,15 @@ print(data_frame.loc[data_frame['Attendance'].idxmin()])
 
 print('\nAverage GPA: ', data_frame['CGPA'].mean())
 
-print('\n Students above 8 CGPA: ')
+print('\n Students above 8 CGPA:')
 print(data_frame[data_frame['CGPA'] > 8])
 
-print('\nAttendance from highest to lowest: ')
+print('\nAttendance from highest to lowest:')
 print(data_frame.sort_values('Attendance', ascending = False))
 
 print('\n==== Example 2 ====')
 
-np.random.seed(42) # this gives the exact random values everytime you run the code.
+np.random.seed(42) # Ensures the same random values are generated every time the program runs.
 n = 50
 
 new_data = pd.DataFrame({
@@ -99,9 +99,10 @@ new_data = pd.DataFrame({
     'Attendance': np.random.randint(50, 100, n),
 })
 
-print('\nOverall info of the dataframe: ')
+print('\nOverall info of the dataframe:')
 new_data.info()
-print()
+
+print("\nStatistical summary of numeric columns:")
 print(new_data.describe())
 
 print('\nStudent with highest CGPA:')
