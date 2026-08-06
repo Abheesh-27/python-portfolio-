@@ -152,7 +152,7 @@ while True:
         search_account()
         
     elif choice == 6:
-        print('Thank you for using Bank Management System!')
+        print('Thank you for using Bank Management System!\n')
         break
 
     else:
