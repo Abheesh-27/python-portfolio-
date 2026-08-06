@@ -20,6 +20,25 @@ print(df.isnull().sum())
 print('\nDUPLICATED VALUES:')
 print(df.duplicated().sum())
 
+
+# DATA CLEANING
+print('\n===== DATA CLEANING =====')
+
+# Remove duplicate rows
+duplicates_before = df.duplicated().sum()
+df = df.drop_duplicates()
+duplicates_after = df.duplicated().sum()
+
+print(f'Duplicates before cleaning : {duplicates_before}')
+print(f'Duplicates after cleaning  : {duplicates_after}')
+
+# Handle missing values (if present)
+if df['Postal Code'].isnull().sum() > 0:
+    df['Postal Code'] = df['Postal Code'].fillna(df['Postal Code'].median())
+
+print('\nRemaining Missing Values:')
+print(df.isnull().sum())
+
 # currently order date & ship date are in string format , we need to convert it to datetime
 
 print('\n===== CONVERTING DATE COLUMNS =====')
@@ -154,11 +173,11 @@ most_profitable_category = category_performance['Total_Profit'].idxmax()
 print('\nMOST PROFITABLE CATEGORY:')
 print(most_profitable_category)
 
-# best marigin category
-best_marigin_category = category_performance['Profit_Margin'].idxmax()
+# best margin category
+best_margin_category = category_performance['Profit_Margin'].idxmax()
 
-print('\nCATEGORY WITH BEST PROFIT MARIGIN:')
-print(best_marigin_category)
+print('\nCATEGORY WITH BEST PROFIT MARGIN:')
+print(best_margin_category)
 
 
 print("\n===== REGIONAL PERFORMANCE =====")
