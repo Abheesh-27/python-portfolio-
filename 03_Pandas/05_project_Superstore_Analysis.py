@@ -1,7 +1,7 @@
 import pandas as pd
 
 print('\n===== SUPERSTORE DATA ANALYSIS =====')
-df = pd.read_csv('03_Pandas/Sample - Superstore.csv', encoding='latin1')
+df = pd.read_csv('03_Pandas/Sample_Superstore.csv', encoding='latin1')
 
 print(df.head())
 
