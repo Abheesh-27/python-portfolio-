@@ -124,7 +124,7 @@ if integer <= 1:
 else:
     prime = True
 
-    for i in range(2,integer):
+    for i in range(2, int(integer ** 0.5) + 1):
         if integer % i == 0:
             prime = False
             break
