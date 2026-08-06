@@ -1,16 +1,12 @@
-# Python Basics.
-
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-green)
+# Python Basics
 
 A structured collection of Python programs covering the fundamental concepts of the language, built through daily practice and mini projects.
 
-This module forms the foundation of my software engineering and machine learning learning roadmap. Every program in this directory was written to strengthen problem-solving skills, code organization, and programming fundamentals before moving on to scientific computing and data analysis.
+This module forms the foundation of my software engineering and machine learning roadmap. Every program in this directory was written to strengthen problem-solving skills, code organization, and programming fundamentals before moving on to scientific computing and data analysis.
 
 ---
 
-## Table of Contents.
+## Table of Contents
 
 - [Module Objectives](#module-objectives)
 - [Overview](#overview)
@@ -25,7 +21,7 @@ This module forms the foundation of my software engineering and machine learning
 
 ---
 
-## Module Objectives.
+## Module Objectives
 
 - Build a strong foundation in Python programming.
 - Develop problem-solving skills through daily coding exercises.
@@ -34,7 +30,7 @@ This module forms the foundation of my software engineering and machine learning
 
 ---
 
-## Overview.
+## Overview
 
 This module introduces the core building blocks of Python programming through progressively structured exercises.
 
@@ -59,7 +55,7 @@ Each topic includes practical examples focused on writing clean, readable, and w
 
 ---
 
-## Repository Structure.
+## Repository Structure
 
 ```text
 01_Python_Basics/
@@ -78,13 +74,12 @@ Each topic includes practical examples focused on writing clean, readable, and w
 ├── day12_oop.py
 ├── day13_student_management_system.py
 ├── day14_bank_management_system.py
-├── Students.txt
 └── README.md
 ```
 
 ---
 
-## Learning Roadmap.
+## Learning Roadmap
 
 | Day | Topic |
 |:--:|-------------------------------|
@@ -102,11 +97,12 @@ Each topic includes practical examples focused on writing clean, readable, and w
 | 12 | [Object-Oriented Programming](day12_oop.py) |
 | 13 | [Student Management System](day13_student_management_system.py) |
 | 14 | [Bank Management System](day14_bank_management_system.py) |
+
 ---
 
 ## Mini Projects
 
-### Student Management System.
+### Student Management System
 
 A command-line application for managing student records.
 
@@ -125,7 +121,7 @@ A command-line application for managing student records.
 
 ---
 
-### Bank Management System.
+### Bank Management System
 
 A console-based banking application designed using object-oriented programming principles.
 
@@ -145,7 +141,7 @@ A console-based banking application designed using object-oriented programming p
 
 ---
 
-## Learning Outcomes.
+## Learning Outcomes
 
 Key skills developed through this module:
 
@@ -171,7 +167,7 @@ git clone https://github.com/Abheesh-27/python-portfolio-.git
 Move into this module:
 
 ```bash
-cd python-portfolio/01_Python_Basics
+cd python-portfolio-/01_Python_Basics
 ```
 
 Run any program:
