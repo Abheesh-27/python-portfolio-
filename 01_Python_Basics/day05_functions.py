@@ -124,7 +124,7 @@ print("Total Amount =",p+si)
 
 
 
-print('\n ===== Compund Interest =====')
+print('\n ===== Compound Interest =====')
 
 def compound_interest(principal, rate, time):
     amount = principal * ((1 + rate / 100) ** time)
