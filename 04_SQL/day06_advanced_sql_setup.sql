@@ -1,0 +1,14 @@
+CREATE TABLE Sales (
+    Sale_ID INTEGER PRIMARY KEY,
+    Sale_Date DATE,
+    Amount REAL
+);
+
+INSERT INTO Sales VALUES
+(1, '2026-01-01', 1000),
+(2, '2026-01-05', 1500),
+(3, '2026-01-10', 800),
+(4, '2026-02-03', 2000),
+(5, '2026-02-10', 1200),
+(6, '2026-03-02', 2500),
+(7, '2026-03-15', 1800);
