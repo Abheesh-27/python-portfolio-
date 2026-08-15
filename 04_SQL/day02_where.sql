@@ -168,7 +168,7 @@ WHERE Department IS NULL ;
 -- Employees who have a Department
 SELECT *
 FROM Employees 
-WHERE Email IS NOT NULL ;
+WHERE Department IS NOT NULL ;
 
 
 -- ===== QUERRIES =====
