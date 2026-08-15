@@ -324,9 +324,9 @@ payroll_count = cursor.execute(
     "SELECT COUNT(*) FROM Payroll"
 ).fetchone()[0]
 
-print("==========================================")
-print("Data generation completed successfully!")
-print("==========================================")
+
+print("===== Data generation completed successfully! =====")
+
 print(f"Employees generated: {employee_count}")
 print(f"Attendance records:  {attendance_count}")
 print(f"Payroll records:     {payroll_count}")
