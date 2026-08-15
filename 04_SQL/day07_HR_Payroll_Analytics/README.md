@@ -26,7 +26,7 @@ Attendance risk scoring across departments (30-day window, 50 employees):
 - **Attendance** — Attendance_ID, Employee_ID, Date, Status (Present/Absent/Leave)
 - **Payroll** — Payroll_ID, Employee_ID, Month, Basic_Pay, Bonus, Deductions, Net_Pay
 
-Data is synthetically generated (`generate_data.py`) with seeded randomness for reproducibility — 50 employees, ~1,500 attendance records, 600 payroll records across 12 months.
+Data is synthetically generated (`generate_data.py`) with seeded randomness and a fixed date anchor for full reproducibility — 50 employees, 1,500 attendance records, 600 payroll records across 12 months.
 
 ## Queries Covered
 
