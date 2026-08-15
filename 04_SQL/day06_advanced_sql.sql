@@ -46,7 +46,7 @@ WHERE Salary = (
 );
 
 
--- ===== IN, EXISTS, ANY, ALL =====
+-- ===== IN, EXISTS =====
 
 -- IN -> is the value contained in the set of value?
 -- Employees in Engineering or Finance
@@ -100,34 +100,6 @@ WHERE NOT EXISTS (
     SELECT 1
     FROM Employees e
     WHERE e.Department_ID = d.Department_ID
-);
-
--- ANY -> Compare against atleast one value
--- Salary greater than ANY Engineering salary
-SELECT 
-    Name,
-    Salary
-FROM Employees
-WHERE Salary > ANY (
-    SELECT e.Salary 
-    FROM Employees e
-    JOIN Departments d
-        ON e.Department_ID = d.Department_ID
-    WHERE d.Department_Name = 'Engineering'
-);
-
--- ALL -> Compare against every value
--- Salary greater than ALL Engineering salaries
-SELECT
-    Name,
-    Salary
-FROM Employees
-WHERE Salary > ALL (
-    SELECT e.Salary
-    FROM Employees e
-    JOIN Departments d
-        ON e.Department_ID = d.Department_ID
-    WHERE d.Department_Name = 'Engineering'
 );
 
 
