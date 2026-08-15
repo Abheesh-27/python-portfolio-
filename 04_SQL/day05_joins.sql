@@ -148,15 +148,6 @@ INNER JOIN Employees m
     ON e.Manager_ID = m.Employee_ID
 WHERE m.Name = 'Alice';
 
--- Employees who don't have a manager
-SELECT
-    e.Name AS Employee,
-    m.Name AS Manager
-FROM Employees e
-INNER JOIN Employees m
-    ON e.Manager_ID = m.Employee_ID
-WHERE e.Manager_ID IS NULL;
-
 
 -- ===== JOIN All 3 Tables =====
 
